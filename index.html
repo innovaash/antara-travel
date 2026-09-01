@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Antara Travel Planner — personalised travel planning, stays, transport and experiences.">
+  <title>Antara — Your Journey, Thoughtfully Planned</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">
+    <span>✦ Personalised travel planning from Karnataka</span>
+    <span class="announcement-dot"></span>
+    <span>Tell us what you want — we'll help plan the rest.</span>
+  </div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Antara home">
+    <img src="antara-logo.jpg"
+         alt="Antara Travel Planner"
+         class="antara-logo">
+      <span>
+        <strong>Antara</strong>
+        <small>travel planner</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#destinations">Destinations</a>
+      <a href="#styles">Travel styles</a>
+      <a href="#how">How it works</a>
+      <a href="#planner">Plan my trip</a>
+      <a href="#contact" class="nav-cta">Talk to Antara <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-image"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow light">YOUR JOURNEY, THOUGHTFULLY PLANNED</p>
+        <h1>Go somewhere<br><em>worth remembering.</em></h1>
+        <p class="hero-copy">Personalised trips, handpicked stays and experiences designed around you — not a generic package.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#planner">Plan my trip <span>→</span></a>
+          <a class="btn btn-glass" href="#destinations">Explore destinations</a>
+        </div>
+        <div class="hero-trust">
+          <span>✓ Human-guided planning</span>
+          <span>✓ Flexible budgets</span>
+          <span>✓ WhatsApp support</span>
+        </div>
+      </div>
+      <div class="hero-card">
+        <span class="mini-label">30-SECOND QUIZ</span>
+        <strong>Not sure where to go?</strong>
+        <p>Tell us your travel mood and we'll suggest a destination.</p>
+        <button class="text-btn" id="quizTrigger">Take the quiz <span>→</span></button>
+      </div>
+    </section>
+
+    <section class="entry-strip">
+      <div class="section-wrap entry-grid">
+        <div>
+          <span class="eyebrow">START ANYWHERE</span>
+          <h2>Find Antara the way you travel.</h2>
+        </div>
+        <div class="entry-links">
+          <a href="#destinations"><span>01</span><b>Google Search</b><i>↗</i></a>
+          <a href="#contact"><span>02</span><b>WhatsApp</b><i>↗</i></a>
+          <a href="#styles"><span>03</span><b>Instagram</b><i>↗</i></a>
+          <a href="#planner"><span>04</span><b>Website</b><i>↗</i></a>
+          <a href="#contact"><span>05</span><b>Facebook</b><i>↗</i></a>
+          <a href="#contact"><span>06</span><b>YouTube</b><i>↗</i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrap section-pad" id="destinations">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">CURATED ESCAPES</span>
+          <h2>Where will you go next?</h2>
+        </div>
+        <a class="text-btn" href="#planner">Get a personalised itinerary →</a>
+      </div>
+
+      <div class="destination-grid">
+        <article class="destination-card large">
+          <div class="destination-img img-coorg"></div>
+          <div class="destination-content">
+            <span>KARNATAKA</span>
+            <h3>Coorg</h3>
+            <p>Slow mornings, coffee estates & misty hills.</p>
+            <button class="card-link" data-destination="Coorg">Plan Coorg →</button>
+          </div>
+        </article>
+        <article class="destination-card">
+          <div class="destination-img img-kerala"></div>
+          <div class="destination-content">
+            <span>KERALA</span>
+            <h3>Backwaters</h3>
+            <p>Houseboats, sunsets & unhurried days.</p>
+            <button class="card-link" data-destination="Kerala Backwaters">Plan Kerala →</button>
+          </div>
+        </article>
+        <article class="destination-card">
+          <div class="destination-img img-goa"></div>
+          <div class="destination-content">
+            <span>GOA</span>
+            <h3>Goa</h3>
+            <p>Beach days, cafés & a little adventure.</p>
+            <button class="card-link" data-destination="Goa">Plan Goa →</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="style-section" id="styles">
+      <div class="section-wrap section-pad">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">TRAVEL STYLE</span>
+            <h2>Choose the feeling, not just the place.</h2>
+          </div>
+          <p class="muted">Every style filters into a trip designed around your pace.</p>
+        </div>
+        <div class="style-grid">
+          <button class="style-card active" data-style="Family">
+            <span class="style-icon">⌂</span><strong>Family</strong><small>Easy, comfortable days</small>
+          </button>
+          <button class="style-card" data-style="Couple">
+            <span class="style-icon">♡</span><strong>Couple</strong><small>Slow & memorable</small>
+          </button>
+          <button class="style-card" data-style="Adventure">
+            <span class="style-icon">↗</span><strong>Adventure</strong><small>More thrill, less routine</small>
+          </button>
+          <button class="style-card" data-style="Beach">
+            <span class="style-icon">◌</span><strong>Beach</strong><small>Sun, sand & sea</small>
+          </button>
+          <button class="style-card" data-style="Nature">
+            <span class="style-icon">✦</span><strong>Nature</strong><small>Green & peaceful</small>
+          </button>
+          <button class="style-card" data-style="Solo">
+            <span class="style-icon">○</span><strong>Solo</strong><small>Your pace, your story</small>
+          </button>
+        </div>
+        <div class="style-result" id="styleResult">
+          <span>Family →</span> Best family trips from Karnataka → Get a personalised family itinerary.
+        </div>
+      </div>
+    </section>
+
+    <section class="planner-section" id="planner">
+      <div class="section-wrap planner-wrap">
+        <div class="planner-intro">
+          <span class="eyebrow light">PLAN MY TRIP</span>
+          <h2>Tell us about your trip.<br><em>We'll help plan it.</em></h2>
+          <p>Answer seven simple questions. Your request is then sent to Antara for a personalised response.</p>
+          <div class="planner-notes">
+            <div><b>01</b><span>Tell us where you want to go — or let us suggest.</span></div>
+            <div><b>02</b><span>Share your dates, people and budget.</span></div>
+            <div><b>03</b><span>Choose exactly what you need.</span></div>
+          </div>
+        </div>
+
+        <form class="trip-form" id="tripForm">
+          <div class="progress-top">
+            <span id="stepLabel">Step 1 of 7</span>
+            <span id="progressPercent">14%</span>
+          </div>
+          <div class="progress"><span id="progressBar"></span></div>
+
+          <fieldset class="step active" data-step="1">
+            <span class="question-no">01</span>
+            <h3>Where do you want to go?</h3>
+            <p class="hint">Already have a destination, or let Antara suggest one.</p>
+            <div class="option-grid">
+              <button type="button" class="choice" data-field="destination" data-value="I know my destination">I know my destination</button>
+              <button type="button" class="choice" data-field="destination" data-value="Suggest a destination">Suggest a destination</button>
+            </div>
+            <input class="text-input" id="destinationText" type="text" placeholder="Type your destination (optional)">
+          </fieldset>
+
+          <fieldset class="step" data-step="2">
+            <span class="question-no">02</span>
+            <h3>Where are you travelling from?</h3>
+            <p class="hint">City / town</p>
+            <input class="text-input required-input" id="fromCity" type="text" placeholder="e.g. Udupi">
+          </fieldset>
+
+          <fieldset class="step" data-step="3">
+            <span class="question-no">03</span>
+            <h3>When are you travelling?</h3>
+            <p class="hint">Departure date</p>
+            <input class="text-input required-input" id="travelDate" type="date">
+          </fieldset>
+
+          <fieldset class="step" data-step="4">
+            <span class="question-no">04</span>
+            <h3>How many days?</h3>
+            <div class="option-grid four">
+              <button type="button" class="choice" data-field="days" data-value="1–2 days">1–2 days</button>
+              <button type="button" class="choice" data-field="days" data-value="3–4 days">3–4 days</button>
+              <button type="button" class="choice" data-field="days" data-value="5–7 days">5–7 days</button>
+              <button type="button" class="choice" data-field="days" data-value="7+ days">7+ days</button>
+            </div>
+          </fieldset>
+
+          <fieldset class="step" data-step="5">
+            <span class="question-no">05</span>
+            <h3>Who are you travelling with?</h3>
+            <div class="option-grid four">
+              <button type="button" class="choice" data-field="travellers" data-value="Solo">Solo</button>
+              <button type="button" class="choice" data-field="travellers" data-value="Couple">Couple</button>
+              <button type="button" class="choice" data-field="travellers" data-value="Family">Family</button>
+              <button type="button" class="choice" data-field="travellers" data-value="Friends">Friends</button>
+            </div>
+            <label class="number-wrap">Number of travellers
+              <input class="text-input" id="travellerCount" type="number" min="1" max="30" value="2">
+            </label>
+          </fieldset>
+
+          <fieldset class="step" data-step="6">
+            <span class="question-no">06</span>
+            <h3>What's your approximate budget?</h3>
+            <div class="option-grid budget">
+              <button type="button" class="choice" data-field="budget" data-value="Under ₹25,000">Under ₹25,000</button>
+              <button type="button" class="choice" data-field="budget" data-value="₹5k–₹10k">₹5k–₹10k</button>
+              <button type="button" class="choice" data-field="budget" data-value="₹10k–₹20k">₹10k–₹20k</button>
+              <button type="button" class="choice" data-field="budget" data-value="₹20k–₹50k">₹20k–₹50k</button>
+              <button type="button" class="choice" data-field="budget" data-value="₹50k+">₹50k+</button>
+            </div>
+          </fieldset>
+
+          <fieldset class="step" data-step="7">
+            <span class="question-no">07</span>
+            <h3>What do you need?</h3>
+            <div class="check-grid">
+              <label><input type="checkbox" name="need" value="Hotel"> <span>Hotel</span></label>
+              <label><input type="checkbox" name="need" value="Transport"> <span>Transport</span></label>
+              <label><input type="checkbox" name="need" value="Sightseeing"> <span>Sightseeing</span></label>
+              <label><input type="checkbox" name="need" value="Complete itinerary"> <span>Complete itinerary</span></label>
+              <label><input type="checkbox" name="need" value="Activities"> <span>Activities</span></label>
+              <label><input type="checkbox" name="need" value="Everything"> <span>Everything</span></label>
+            </div>
+            <div class="contact-grid">
+              <input class="text-input required-input" id="name" type="text" placeholder="Your name">
+              <input class="text-input required-input" id="phone" type="tel" placeholder="WhatsApp number">
+              <input class="text-input" id="email" type="email" placeholder="Email (optional)">
+            </div>
+          </fieldset>
+
+          <div class="form-nav">
+            <button type="button" class="btn btn-outline-dark" id="backBtn" disabled>← Back</button>
+            <button type="button" class="btn btn-dark" id="nextBtn">Continue →</button>
+            <button type="submit" class="btn btn-dark hidden" id="submitBtn">Send trip request →</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section-wrap section-pad" id="how">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">HOW ANTARA WORKS</span>
+          <h2>Simple for you. Thoughtful behind the scenes.</h2>
+        </div>
+      </div>
+      <div class="process-grid">
+        <div class="process-card"><span>01</span><h3>Tell us your idea</h3><p>Destination, dates, people, budget and what you want help with.</p></div>
+        <div class="process-card"><span>02</span><h3>We shape the trip</h3><p>Antara turns your inputs into a practical, personalised plan.</p></div>
+        <div class="process-card"><span>03</span><h3>Review & refine</h3><p>Ask questions, adjust preferences and make the plan feel right.</p></div>
+        <div class="process-card"><span>04</span><h3>Travel with clarity</h3><p>Hotels, transport, sightseeing and experiences — organised in one place.</p></div>
+      </div>
+    </section>
+
+    <section class="whatsapp-section" id="contact">
+      <div class="section-wrap whatsapp-wrap">
+        <div>
+          <span class="eyebrow light">WHATSAPP AUTO RESPONSE</span>
+          <h2>Prefer a quick conversation?</h2>
+          <p>Message Antara and choose what you need. A human planner can take it from there.</p>
+        </div>
+        <div class="wa-options">
+          <button data-wa="Complete trip plan">01 · Complete trip plan</button>
+          <button data-wa="Hotel suggestions">02 · Hotel suggestions</button>
+          <button data-wa="Transport">03 · Transport</button>
+          <button data-wa="Custom package">04 · Custom package</button>
+          <button data-wa="Budget trip ideas">05 · Budget trip ideas</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrap section-pad lead-section">
+      <div class="lead-card">
+        <div>
+          <span class="eyebrow">LEAD QUALIFICATION</span>
+          <h2>Every enquiry gets a useful next step.</h2>
+          <p>Antara can classify incoming requests so the sales process knows what the customer wants.</p>
+        </div>
+        <div class="lead-types">
+          <div><b>HOT</b><span>Has dates, destination, budget and wants a quote/booking.</span></div>
+          <div><b>WARM</b><span>Interested, planning in the next few weeks, needs suggestions.</span></div>
+          <div><b>COLD</b><span>Just browsing, no dates, no budget, general information.</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="section-wrap footer-grid">
+      <div>
+        <a class="brand footer-brand" href="#top"><img src="antara-logo.jpg"  alt="Antara Travel Planner" class="antara-logo"><span><strong>Antara</strong><small>travel planner</small></span></a>
+        <p>Thoughtful travel planning for journeys that feel like yours.</p>
+      </div>
+      <div><span class="footer-title">Explore</span><a href="#destinations">Destinations</a><a href="#styles">Travel styles</a><a href="#planner">Plan my trip</a></div>
+      <div><span class="footer-title">Connect</span><a href="https://wa.me/${918197727417}">WhatsApp</a><a href="mailto:antaratravelcompany@gmail.com">Email</a><a href="https://www.instagram.com/travelwith_antara/?hl=en">Instagram</a><a href="#contact">YouTube</a></div>
+      <div><span class="footer-title">Antara</span><a href="#how">How it works</a><a href="#top">Back to top ↑</a></div>
+    </div>
+    <div class="section-wrap footer-bottom"><span>© 2026 Antara Travel Planner</span><span>Made for meaningful journeys.</span></div>
+  </footer>
+
+  <div class="modal hidden" id="quizModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close="quiz"></div>
+    <div class="modal-card">
+      <button class="modal-close" data-close="quiz">×</button>
+      <span class="eyebrow">30-SECOND QUIZ</span>
+      <h2>What kind of trip are you craving?</h2>
+      <div class="quiz-options">
+        <button data-quiz="Family">Family time</button>
+        <button data-quiz="Adventure">Adventure</button>
+        <button data-quiz="Beach">Beach escape</button>
+        <button data-quiz="Nature">Nature & calm</button>
+        <button data-quiz="Couple">Couple getaway</button>
+        <button data-quiz="Solo">Solo reset</button>
+      </div>
+      <div class="quiz-result hidden" id="quizResult"></div>
+    </div>
+  </div>
+
+  <div class="modal hidden" id="successModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close="success"></div>
+    <div class="modal-card success-card">
+      <div class="success-icon">✓</div>
+      <span class="eyebrow">REQUEST RECEIVED</span>
+      <h2>Your trip request is on its way.</h2>
+      <p id="successText">We've prepared your request. Antara will contact you on WhatsApp.</p>
+      <div class="lead-badge" id="leadBadge">WARM LEAD</div>
+      <div class="success-actions">
+        <button class="btn btn-dark" id="whatsappAfterSubmit">Open WhatsApp →</button>
+        <button class="text-btn" data-close="success">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <button class="floating-wa" id="floatingWa" aria-label="Chat on WhatsApp">◔</button>
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
