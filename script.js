@@ -41,6 +41,61 @@ function showToast(message) {
   clearTimeout(showToast.timer);
   showToast.timer = setTimeout(() => toast.classList.remove("show"), 2800);
 }
+/* =========================
+   ANTARA COLOUR THEMES
+========================= */
+const antaraThemes = {
+    sunset: {
+        background: "#fff7ed",
+        text: "#222222",
+        accent: "#d97706",
+        muted: "#666666"
+    },
+    ocean: {
+        background: "#eff9ff",
+        text: "#102a43",
+        accent: "#0284c7",
+        muted: "#52606d"
+    },
+    tropical: {
+        background: "#f0fdf4",
+        text: "#14532d",
+        accent: "#16a34a",
+        muted: "#52705a"
+    },
+    lavender: {
+        background: "#faf5ff",
+        text: "#3b0764",
+        accent: "#9333ea",
+        muted: "#6b5b73"
+    },
+    rose: {
+        background: "#fff1f2",
+        text: "#4c0519",
+        accent: "#e11d48",
+        muted: "#76515c"
+    }
+};
+/* =========================
+   CHANGE THEME
+========================= */
+function changeAntaraTheme(themeName) {
+    const theme = antaraThemes[themeName];
+    if (!theme) {
+        console.log("Theme not found");
+        return;
+    }
+    const root = document.documentElement;
+    root.style.setProperty("--about-bg", theme.background);
+    root.style.setProperty("--about-text", theme.text);
+    root.style.setProperty("--about-accent", theme.accent);
+    root.style.setProperty("--about-muted", theme.muted);
+}
+/* =========================
+   DEFAULT THEME
+========================= */
+changeAntaraTheme("sunset");
+
 
 function updateProgress() {
   const percent = Math.round((state.step / steps.length) * 100);
